@@ -1,0 +1,83 @@
+﻿@model Detail
+
+
+
+<link rel="stylesheet" href="~/css/Detail.css" />
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+
+<div class="" style="background-image: url(https://themes.muffingroup.com/be/icecream2/wp-content/uploads/2019/09/icecream2-subheader3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 550px;
+        background-color: #fff5f7;
+    ">
+    <div>
+        <h1 style="font-size: 65px;
+    line-height: 65px;
+    padding-left: 300px;
+    padding-top: 270px;
+    color: white;
+    font-weight: 600;">
+            ICE CREAM<br style="color:#d41442" /> RECIPES
+        </h1>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="card">
+        <div class="container-fliud">
+            <div class="wrapper row">
+                <div class="preview col-md-6">
+
+                    <div class="preview-pic tab-content">
+                        <div class="tab-pane active" id="pic-1"><img src="@Model.Products.First().Image" width="400" height="252"/></div>
+                    </div>
+
+
+                </div>
+                <div class="details col-md-6">
+                    <h3 class="product-title">@Model.Products.First().Name</h3>
+                    <div class="rating">
+                        <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <span class="review-no">41 reviews</span>
+                    </div>
+                    <p class="product-description">@Model.Products.First().Description</p>
+                    <h4 class="price">current price: <span>@Model.Products.First().Price.ToString("c")</span></h4>
+                    <p class="vote"><strong>91%</strong> of buyers enjoyed this product! <strong>(87 votes)</strong></p>
+                    <p>@Model.Products.First().Recipe</p>
+                    <p>@Model.Products.First().Ingredients;</p>
+
+                    <div class="action">
+
+                        <form method="post" asp-page="/Cart" id="@Model.Products.First().ProductID">
+
+                            <input type="hidden" asp-for="@Model.Products.First().ProductID" />
+                            <input type="hidden" name="returnUrl"
+                                   value="@ViewContext.HttpContext.Request.PathAndQuery()" />
+                            <span class="card-text p-1">
+                                @Model.Products.First().Description
+                                @Model.Products.First().Note;
+                                <br />
+                                <br />
+                                <br />
+                                <hr />
+                                <br />
+                                <button class="add-to-cart btn btn-default" type="submit">Add to cart</button>
+                                <a class="like btn btn-default" type="button" href='/Recipe'>Return Recipe Page</a>
+                            </span>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
