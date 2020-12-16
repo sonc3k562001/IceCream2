@@ -8564,27 +8564,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\son10\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Tran Thi An\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\son10\\OneDrive\\Tài liệu\\GitHub\\TeamVit\\TeamVit\\Ice-Cream-master\\Ice_Cream\\Ice_Cream.csproj",
+      "projectUniqueName": "D:\\Visual Studio 2019\\EAP\\Team\\Ice-Cream-master\\Ice_Cream\\Ice_Cream.csproj",
       "projectName": "Ice_Cream",
-      "projectPath": "C:\\Users\\son10\\OneDrive\\Tài liệu\\GitHub\\TeamVit\\TeamVit\\Ice-Cream-master\\Ice_Cream\\Ice_Cream.csproj",
-      "packagesPath": "C:\\Users\\son10\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\son10\\OneDrive\\Tài liệu\\GitHub\\TeamVit\\TeamVit\\Ice-Cream-master\\Ice_Cream\\obj\\",
+      "projectPath": "D:\\Visual Studio 2019\\EAP\\Team\\Ice-Cream-master\\Ice_Cream\\Ice_Cream.csproj",
+      "packagesPath": "C:\\Users\\Tran Thi An\\.nuget\\packages\\",
+      "outputPath": "D:\\Visual Studio 2019\\EAP\\Team\\Ice-Cream-master\\Ice_Cream\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\son10\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Tran Thi An\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -8595,7 +8588,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -8607,7 +8599,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
@@ -8638,16 +8629,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.1.10, 3.1.10]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[3.1.10, 3.1.10]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -8656,7 +8637,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
