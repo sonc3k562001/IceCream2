@@ -1,29 +1,34 @@
-﻿@model Product
+﻿@model Ice_Cream.Models.Product
 
+<environment>
+    <link rel="stylesheet" href="~/css/recipe.css" />
+</environment>
 
 <div class="one-third mcb-wrap" style="padding:0 1%">
-    <div class="column one">
-        <div style="background-color: #ffd4de; padding: 0 0 40px; border-radius: 20px;text-align: center;margin-top:100px">
-            <div class="image_frame" style="margin-top:-80px;border-width: 0">
-                <div class="image_wrapper">
-                    <img class="scale-with-grid" src="https://themes.muffingroup.com/be/icecream2/wp-content/uploads/2019/09/icecream2-ourproducts-pic2.png" width="780" height="780" />
-                    <hr class="no_line" style="margin:0 auto 10px" />
-                    <h6 style="color: #ffb8c9; margin-bottom: 2px">@Model.Category</h6>
-                    <h4>
-                        @Model.Name
-                    </h4>
-                    <p style="margin: 0 10%;">@Model.Description</p>
-                    <hr class="no_line" style="margin: 0 auto 20px" />
-                    <div class="image_frame no_border" style="border-width: 0;border-color: #f8f8f8;">
-                        <div class="i" style=" border-color: #e2e2e2; position:relative; overflow:hidden; box-sizing:border-box">
-                            <div class="wrapper">
-                                <a href="/Recipe/Detail/@Model.ProductID">
-                                    <div style="box-shadow: inset 0 0 5px 2px rgba(0,0,0,.07);display: none!important;position:absolute;z-index:2;width:100%;height:100%"></div>
-                                    <img src="https://themes.muffingroup.com/be/icecream2/wp-content/uploads/2019/09/icecream2-arrow-right.png" style=" max-width: 100%; height: auto" width="40" height="40" />
-                                </a>
-                            </div>
-                            <div style="display: none;">
-                                <a> <i style="font-style:italic"></i></a>
+    <div>
+        <div class="column one">
+            <div style="background-color: rgba(255,255,255,0.8); padding: 0 0 40px; border-radius: 20px; text-align: center;">
+                <div class="image_frame" style="border-width: 0">
+                    <div class="image_wrapper text-center">
+                        <img class="scale-with-grid" src="@Model.Image" width="250" height="250" />
+                        <hr class="no_line" style="margin:0 auto 10px" />
+                        <h6 style="color: #ffb8c9; margin-bottom: 2px">ICE CREAM</h6>
+                        <h4 style="height:70px; overflow:auto;color: #000000;">
+                            <a href="#" style="color: #000000;">@Model.Name</a>
+                        </h4>
+                        <p style="margin: 0 10%; height:150px; overflow:auto; color: #907e82;">@Model.Description</p>
+                        <hr class="no_line" style="margin: 0 auto 20px" />
+                        <div class="image_frame no_border" style="border-width: 0;border-color: #f8f8f8;">
+                            <div class="i" style=" border-color: #e2e2e2; position:relative; overflow:hidden; box-sizing:border-box">
+                                <div class="wrapper">
+                                    <a href="/Recipe/Detail/@Model.ProductID">
+                                        <div style="box-shadow: inset 0 0 5px 2px rgba(0,0,0,.07);display: none!important;position:absolute;z-index:2;width:100%;height:100%"></div>
+                                        <img src="https://themes.muffingroup.com/be/icecream2/wp-content/uploads/2019/09/icecream2-arrow-right.png" style=" max-width: 100%; height: auto" width="40" height="40" />
+                                    </a>
+                                </div>
+                                <div style="display: none;">
+                                    <a> <i style="font-style:italic"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>

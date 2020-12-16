@@ -1,12 +1,67 @@
-﻿@model ProductsListViewModel
+﻿@*@model IQueryable<Product>*@
+@model ProductsListViewModel
 
-@foreach (var p in Model.Products)
-{
-<partial name="ProductSummary" model="p" />}
+<environment>
+    <link rel="stylesheet" href="~/css/recipe.css" />
+</environment>
+<div style="background:#f9b3cf;">
+    <div class="container">
+        <div class="top-bar-left">
+            <div class="logo">
+                <a href="/#"><span>ICE CREAM</span></a>
+            </div>
+            <div class="menu-wrapper">
+                <ul class="menu-ul">
+                    <li><a asp-controller="Home" asp-action="Index"><span>Home</span></a></li>
+                    <li><a asp-controller="Recipe" asp-action="Index"><span style="color:#d41442;font-size:20px">Recipe</span></a></li>
+                    <li><a asp-controller="About" asp-action="Index"><span>About</span></a></li>
+                    <li><a asp-controller="Contact" asp-action="Index"><span>Contact</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="top-bar-right">
+            <div class="login">
+                <span></span>
+            </div>
+        </div>
+    </div>
 
-<div page-model="Model.PagingInfo" page-action="CateRecipe"
-     page-classes-enable="true" page-class="btn" page-class-normal="btn-outline-dark"
-     page-url-category="@Model.CurrentCategory"
-     page-class-selected="btn-primary" class="btn-group pull-right m-1">
 </div>
 
+<div class="image-slide" style="        background-image: url(https://themes.muffingroup.com/be/icecream2/wp-content/uploads/2019/09/icecream2-subheader2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        background-color: #fff5f7;
+    ">
+    <div>
+        <h1 style="font-size: 65px;
+    line-height: 65px;
+    padding-left: 300px;
+    padding-top: 180px;
+    color: white;
+    font-weight: 600;
+     font-family: 'Titan One', Arial, Tahoma, sans-serif;">
+            ICE CREAM<br style="color:red" /> RECIPES
+        </h1>
+    </div>
+</div>
+<div style="background-color:#fff5f7; padding:100px 0 100px; height:auto">
+    <div class="container text-center" style="max-width:1060px;">
+        <h1 style="font-size:60px; color:#d41442; margin:0 0 150px; font-family: 'Titan One', Arial, Tahoma, sans-serif;">
+            RECIPES FOR YOU
+        </h1>
+        <div style="max-width:1060px;">
+            @foreach (var p in Model.Products)
+            {
+                <partial name="ProductSummary" model="p" />
+            }
+        </div>
+    </div>
+</div>
+<div class="text-center" style="background-color:#fff5f7;height:auto; max-width:1060px;">
+    <div page-model="Model.PagingInfo" page-action="CateRecipe"
+         page-classes-enable="true" page-class="btn" page-class-normal="btn-outline-dark"
+         page-class-selected="btn-primary" class="btn-group pull-right m-1">
+    </div>
+</div>

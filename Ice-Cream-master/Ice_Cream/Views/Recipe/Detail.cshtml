@@ -6,17 +6,43 @@
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 
+@*chỗ này phần menu*@
+<div style="background:#f9b3cf;">
+    <div class="container">
+        <div class="top-bar-left">
+            <div class="logo">
+                <a href="/#"><span>ICE CREAM</span></a>
+            </div>
+            <div class="menu-wrapper">
+                <ul class="menu-ul">
+                    <li><a asp-controller="Home" asp-action="Index"><span>Home</span></a></li>
+                    <li><a asp-controller="Recipe" asp-action="Index"><span style="color:#d41442;font-size:20px">Recipe</span></a></li>
+                    <li><a asp-controller="About" asp-action="Index"><span>About</span></a></li>
+                    <li><a asp-controller="Contact" asp-action="Index"><span>Contact</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="top-bar-right">
+            <div class="login">
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
 <div class="" style="background-image: url(https://themes.muffingroup.com/be/icecream2/wp-content/uploads/2019/09/icecream2-subheader3.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 550px;
+        height: 500px;
         background-color: #fff5f7;
     ">
     <div>
         <h1 style="font-size: 65px;
     line-height: 65px;
     padding-left: 300px;
-    padding-top: 270px;
+    padding-top: 180px;
     color: white;
     font-weight: 600;">
             ICE CREAM<br style="color:#d41442" /> RECIPES
@@ -32,7 +58,7 @@
                 <div class="preview col-md-6">
 
                     <div class="preview-pic tab-content">
-                        <div class="tab-pane active" id="pic-1"><img src="@Model.Products.First().Image" width="400" height="252"/></div>
+                        <div class="tab-pane active" id="pic-1"><img src="@Model.Products.First().Image" width="400" height="252" /></div>
                     </div>
 
 
@@ -74,7 +100,7 @@
                                 <a class="like btn btn-default" type="button" href='/Recipe'>Return Recipe Page</a>
                             </span>
                         </form>
-                        
+
                     </div>
                 </div>
             </div>

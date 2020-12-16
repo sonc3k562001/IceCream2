@@ -66,3 +66,99 @@ body {
                     transition: 2s
                 }
 /*chỗ này phần menu*/
+
+
+/*phần ProductSummary và CateRecipe*/
+.image_frame h1 {
+    font-size: 65px;
+    line-height: 65px;
+    padding-left: 300px;
+    padding-top: 270px;
+    color: white;
+    font-weight: 600;
+}
+
+.section {
+    position: relative;
+}
+
+.one-third {
+    width: 33.333%;
+}
+
+.mcb-wrap {
+    float: left;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.one.column {
+    width: 98%;
+}
+
+.column, .columns {
+    float: left;
+    margin: 0 1% 40px;
+}
+
+.image_frame {
+    border-color: #f8f8f8;
+}
+
+.image_wrapper {
+    border-color: #e2e2e2;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.scale-with-grid {
+    margin-top: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px #f9f5f5;
+}
+
+hr {
+    display: block;
+    border: none;
+    outline: none;
+    height: 1px;
+    width: 100%;
+    margin: 0 auto 15px;
+    clear: both;
+}
+
+    hr .no_line {
+        background: none;
+        color: transparent;
+    }
+
+h6 {
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    font-family: "DM Sans", Arial, Tahoma, sans-serif;
+}
+
+.image_frame h4 {
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    font-family: 'Aclonica', sans-serif;
+}
+
+    .image_frame h4 a {
+        font-weight: inherit;
+        text-decoration: none;
+    }
+
+.image_frame {
+    border-color: #f8f8f8;
+}
+
+    .image_frame.no_border {
+        border-width: 0;
+    }
