@@ -162,3 +162,29 @@ h6 {
     .image_frame.no_border {
         border-width: 0;
     }
+
+.button-page .btn-group{
+    min-width:200px;
+}
+
+.button-page a {
+    border: 1px solid #fa9ac1;
+    background-color: #f7a5c6;
+    color: white;
+    margin-right: 10px;
+    width: 40px;
+    border-radius: 5px;
+}
+
+    .button-page a:hover {
+        border: 1px solid #e6436a;
+        background-color: #e85779;
+        text-decoration: none;
+    }
+
+    .button-page a:focus {
+        border: 1px solid #d41442;
+        background-color: #e51f4f;
+        text-decoration: none;
+    }
+
