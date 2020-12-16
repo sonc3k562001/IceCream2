@@ -1,26 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\son10\\OneDrive\\Tài liệu\\GitHub\\TeamVit\\TeamVit\\Ice-Cream-master\\Ice_Cream\\Ice_Cream.csproj": {}
+    "D:\\Visual studio code\\TeamVit\\IceCream2\\Ice-Cream-master\\Ice_Cream\\Ice_Cream.csproj": {}
   },
   "projects": {
-    "C:\\Users\\son10\\OneDrive\\Tài liệu\\GitHub\\TeamVit\\TeamVit\\Ice-Cream-master\\Ice_Cream\\Ice_Cream.csproj": {
+    "D:\\Visual studio code\\TeamVit\\IceCream2\\Ice-Cream-master\\Ice_Cream\\Ice_Cream.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\son10\\OneDrive\\Tài liệu\\GitHub\\TeamVit\\TeamVit\\Ice-Cream-master\\Ice_Cream\\Ice_Cream.csproj",
+        "projectUniqueName": "D:\\Visual studio code\\TeamVit\\IceCream2\\Ice-Cream-master\\Ice_Cream\\Ice_Cream.csproj",
         "projectName": "Ice_Cream",
-        "projectPath": "C:\\Users\\son10\\OneDrive\\Tài liệu\\GitHub\\TeamVit\\TeamVit\\Ice-Cream-master\\Ice_Cream\\Ice_Cream.csproj",
-        "packagesPath": "C:\\Users\\son10\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\son10\\OneDrive\\Tài liệu\\GitHub\\TeamVit\\TeamVit\\Ice-Cream-master\\Ice_Cream\\obj\\",
+        "projectPath": "D:\\Visual studio code\\TeamVit\\IceCream2\\Ice-Cream-master\\Ice_Cream\\Ice_Cream.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Visual studio code\\TeamVit\\IceCream2\\Ice-Cream-master\\Ice_Cream\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\son10\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -31,7 +26,6 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -43,7 +37,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -77,11 +70,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
+              "version": "[3.1.3, 3.1.3]"
             },
             {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.1.10, 3.1.10]"
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
             }
           ],
           "frameworkReferences": {
@@ -92,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
