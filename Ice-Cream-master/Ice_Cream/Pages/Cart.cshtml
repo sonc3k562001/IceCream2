@@ -1,77 +1,87 @@
 ﻿@page
 
 @model CartModel
+<link rel="stylesheet" href="~/css/Cart.css" />
 
-<h2>Your Cart</h2>
 
-    <link rel="stylesheet" href="~/css/Cart.css" />
-    <main>
-        <div class="basket">
-            <div class="basket-module">
-                <label for="promo-code">Enter a promotional code</label>
-                <input id="promo-code" type="text" name="promo-code" maxlength="5" class="promo-code-field">
-                <button class="promo-code-cta">Apply</button>
+<section class="col-xs-12 col-md-12 mt-4">
+    <div class="container">
+        <div class="row">
+            <h4 class="text-center font-weight-bold mb-4 mt-4 col-xs-12 col-md-12">Shopping Cart</h4>
+
+            <div class="basket-module text-center col-xs-12 col-md-12 mb-4">
+                <label for="promo-code" class="mt-2 mb-2">Enter a promotional code</label>
+                <br />
+                <input id="promo-code mt-2 mb-2" type="text" name="promo-code" maxlength="5" class="promo-code-field">
+                <br />
+                <button class="promo-code-cta btn btn-success mt-2 mb-2">Apply</button>
             </div>
 
-            <div class="basket-labels">
-                <ul>
-                    <li class="item item-heading">Your Ice Cream</li>
-                    <li class="price">Price</li>
-
-                </ul>
+            <div class="shopping-list col-xs-8 col-md-8">
+                <table class="table table-bordered table-striped text-center">
+                    <thead>
+                        <tr class="text-center p-2">
+                            <td style="width: 30%;">Product Detail</td>
+                            <td style="width: 20%;">Product Name</td>
+                            <td style="width: 20%;">Category</td>
+                            <td>Price</td>
+                            <td class="hide"></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var line in Model.Cart.Lines)
+                        {
+                            <tr class="text-center p-2">
+                                <td class="product-detail">
+                                    <img src="@line.Product.Image"
+                                         alt="product-image"
+                                         class="product-frame">
+                                </td>
+                                <td class="product-description">
+                                    <span>@line.Product.Name</span>
+                                </td>
+                                <td class="product-category">
+                                    <span>@line.Product.Category</span>
+                                </td>
+                                <td class="product-total">
+                                    <span>@line.Product.Price.ToString("c")</span>
+                                </td>
+                                <td>
+                                    <a href="/remove/{@line.Product.ProductID}" class="btn btn-danger">Remove</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
             </div>
 
-            @foreach (var line in Model.Cart.Lines)
-            {
-                <div class="basket-product">
-                    <div class="item">
-                        <div class="product-image">
-                            <img src="@line.Product.Image" width="120" height="166" alt="Placholder Image 2 120x166" class="product-frame">
-                        </div>
-                        <div class="product-details">
-                            <h1><strong>@line.Product.Name</strong> - @line.Product.Category</h1>
+            <div class="order-summary col-xs-4 col-md-4">
+                <div class="summary">
+                    <div class="summary-total-items"><span class="total-items"></span>Items in your Bag</div>
+                    <div class="summary-subtotal">
+                        <div class="summary-promo hide">
+                            <div class="promo-title">Promotion:</div>
                         </div>
                     </div>
-                    <div>@line.Product.Price.ToString("c")</div>
-                    <div class="remove">
-                        <a href="/remove/{@line.Product.ProductID}">Remove</a>
+                    <div class="summary-delivery">
+                        <select name="delivery-collection" class="summary-delivery-selection">
+                            <option value="0" selected="selected">Choose the form of payment</option>
+                            <option value="collection">Payment on delivery</option>
+                            <option value="first-class">Payment through electronic wallet</option>
+                            <option value="second-class">Payment via bank account</option>
+                            <option value="signed-for">Pay by credit card</option>
+                        </select>
+                    </div>
+                    <div class="summary-total">
+                        <div class="total-title">Total:</div>
+                        <div class="total-value final-value" id="basket-total">@Model.Cart.ComputeTotalValue().ToString("c")</div>
+                    </div>
+                    <div class="summary-checkout">
+                        <button class="checkout-cta btn btn-success">Go to Secure Checkout</button>
                     </div>
                 </div>
-            }
+            </div>
         </div>
-
-        <aside>
-            <div class="summary">
-                <div class="summary-total-items"><span class="total-items"></span> Items in your Bag</div>
-                <div class="summary-subtotal">
-                    <div class="summary-promo hide">
-                        <div class="promo-title">Promotion</div>
-                        <div class="promo-value final-value" id="basket-promo">
-                            <p>Note:</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="summary-delivery">
-                    <select name="delivery-collection" class="summary-delivery-selection">
-                        <option value="0" selected="selected">Choose the form of payment</option>
-                        <option value="collection">Payment on delivery</option>
-                        <option value="first-class">Payment through electronic wallet</option>
-                        <option value="second-class">Payment via bank account</option>
-                        <option value="signed-for">Pay by credit card</option>
-                    </select>
-                </div>
-                <div class="summary-total">
-                    <div class="total-title">Total:</div>
-                    <div class="total-value final-value" id="basket-total">@Model.Cart.ComputeTotalValue().ToString("c")</div>
-                </div>
-                <div class="summary-checkout">
-                    <button class="checkout-cta">Go to Secure Checkout</button>
-                </div>
-            </div>
-        </aside>
-    </main>
-
-    <div class="text-center">
-        <a class="btn btn-primary" href="@Model.ReturnUrl">Continue shopping</a>
     </div>
+</section>
 

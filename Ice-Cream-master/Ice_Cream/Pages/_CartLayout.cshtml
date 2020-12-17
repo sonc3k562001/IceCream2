@@ -2,15 +2,76 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Drink store</title>
+    <title>Ice Cream</title>
     <link href="/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/js/bootstrap.min.js" />
+
+    <link rel="stylesheet" id="mfn-fonts-css" href="https://fonts.googleapis.com/css?family=DM+Sans%3A1%2C300%2C400%2C400italic%2C500%2C700%2C700italic%7CTitan+One%3A1%2C300%2C400%2C400italic%2C500%2C700%2C700italic&amp;ver=5.3.6" type="text/css" media="all">
+    <link rel="stylesheet" id="Montserrat-css" href="https://fonts.googleapis.com/css?family=Montserrat%3A400%2C500&amp;ver=5.3.6" type="text/css" media="all">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+    <link href="~/lib/fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
+    <script defer src="~/lib/fontawesome-free-5.15.1-web/js/all.js"></script>
 </head>
 <body>
-    <div class="bg-dark text-white p-2">
-        <span class="navbar-brand ml-2">Ice Cream</span>
+    <div style="background:#f9b3cf;">
+        <div class="container">
+            <div class="top-bar-left">
+                <div class="logo">
+                    <a href="/#"><span>ICE CREAM</span></a>
+                </div>
+                <div class="menu-wrapper">
+                    <ul class="menu-ul">
+                        <li><a asp-controller="Home" asp-action="Index"><span>Home</span></a></li>
+                        <li><a asp-controller="Recipe" asp-action="Index"><span style="color:#d41442;font-size:20px">Recipe</span></a></li>
+                        <li><a asp-controller="About" asp-action="Index"><span>About</span></a></li>
+                        <li><a asp-controller="Contact" asp-action="Index"><span>Contact</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="top-bar-right">
+                <div class="login">
+
+                </div>
+            </div>
+        </div>
+
     </div>
     <div class="m-1 p-1">
         @RenderBody()
     </div>
+
+    <footer>
+        <div class="widgets-wapper">
+            <div class="container">
+                <div class="columns-footer-one col-6">
+                    <h3>HOMEMADE ICE CREAM MADE</h3>
+                    <h2>WITH PASSION</h2>
+                </div>
+                <div class="columns-footer-two col-6">
+                    <p>
+                        <a href="twitter.com"><i class="fab fa-twitter-square"></i></a>
+                        <a href="facebook.com"><i class="fab fa-facebook-square"></i></a>
+                        <a href="skype.com"><i class="fab fa-skype"></i></a>
+                    </p>
+                    <div class="text-contact-footer">
+                        <h6>
+                            Feel free to contact
+                            <span>+84 1892938283</span>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <div class="copy-right">
+                <span> © 2020 BeIceCream 2 - BeTheme. All Rights Reserved. </span>
+                <a target="_blank" href="#">About Us</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

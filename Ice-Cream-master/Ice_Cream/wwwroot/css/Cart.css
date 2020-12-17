@@ -2,7 +2,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600);
 
-html,
+/*html,
 html a {
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
@@ -115,14 +115,14 @@ aside {
 label {
     display: block;
     margin-bottom: 0.3125rem;
-}
+}*/
 
 .promo-code-field {
-    border: 1px solid #fff;
+    border: 1px solid black;
     padding: 0.5rem;
+    border-radius: 4px;
     text-transform: uppercase;
     transition: all 0.2s linear;
-    width: 48%;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
     -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
@@ -134,17 +134,25 @@ label {
         border: 1px solid #fff;
     }
 
-.promo-code-cta {
+/*.promo-code-cta {
     border-radius: 4px;
     font-size: 0.625rem;
     margin-left: 0.625rem;
     padding: 0.6875rem 1.25rem 0.625rem;
-}
 
-.basket-labels {
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    margin-top: 1.625rem;
+}
+    .promo-code-cta:hover{
+        transition: 0.5s ease-in-out;
+    }
+
+
+.basket-module .table tr{
+    border: solid 1px black;
+}
+.basket-labels {*/
+/*    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;*/
+/*margin-top: 1.625rem;
 }
 
 ul {
@@ -240,14 +248,12 @@ aside {
     float: right;
     position: relative;
     width: 30%;
-}
+}*/
 
 .summary {
     background-color: #fff5f7;
     border: 1px solid #fff;
-    padding: 1rem;
-    position: fixed;
-    width: 250px;
+    /*padding: 1rem;*/
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -299,9 +305,9 @@ aside {
     width: 30%;
 }
 
-.summary-delivery {
-    padding-bottom: 3rem;
-}
+/*.summary-delivery {
+    
+}*/
 
 .subtotal-value,
 .total-value {
@@ -318,12 +324,11 @@ aside {
 }
 
 .checkout-cta {
-    display: block;
-    float: none;
     font-size: 0.75rem;
     text-align: center;
     text-transform: uppercase;
-    padding: 0.625rem 0;
+    border-radius: 4px;
+    padding: 0.625rem;
     width: 100%;
 }
 
@@ -337,7 +342,7 @@ aside {
     width: 100%;
 }
 
-@media screen and (max-width: 640px) {
+/*@media screen and (max-width: 640px) {
     aside,
     .basket,
     .summary,
@@ -415,4 +420,209 @@ aside {
     .product-details {
         padding: 0 1rem;
     }
+}*/
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
 }
+
+body {
+    background-color: #fff5f7;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.logo {
+    float: left;
+    padding-top: 30px;
+}
+
+.top-bar-left {
+    width: 100%;
+    height: 120px
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+    .logo a span {
+        color: #d41442;
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 400;
+        letter-spacing: 0px;
+        font-family: "Titan One", Arial, Tahoma, sans-serif;
+    }
+
+.menu-wrapper {
+    float: left;
+    height: 120px;
+}
+
+.menu-ul {
+    padding: 30px 50px;
+}
+
+    .menu-ul li {
+        list-style: none;
+        float: left;
+        margin-left: 30px;
+        color: white;
+    }
+
+        .menu-ul li a {
+            text-decoration: none;
+        }
+
+            .menu-ul li a span {
+                color: white;
+                font-family: "DM Sans", Arial, Tahoma, sans-serif;
+                font-size: 16px;
+                position: relative;
+                z-index: 2;
+            }
+
+                .menu-ul li a span:hover {
+                    color: #d41442;
+                    transition: 2s
+                }
+/*chỗ này phần menu*/
+
+/*Main*/
+
+table {
+    font-size: 14px !important;
+    border-radius: 4px;
+}
+
+thead tr td {
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+    thead tr td span,
+    thead tr td a {
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+tbody tr td {
+    vertical-align: middle !important;
+}
+
+.product-detail img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+/*footer*/
+footer {
+    width: 100%;
+    height: 395px;
+    float: left;
+}
+
+    footer .widgets-wapper {
+        padding-top: 80px;
+        width: 100%;
+        height: 305px;
+    }
+
+.columns-footer-one {
+    float: left;
+}
+
+    .columns-footer-one h3 {
+        color: #ffa5ba;
+        font-family: "Titan One", Arial, Tahoma, sans-serif;
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 400;
+        letter-spacing: 0px;
+    }
+
+    .columns-footer-one h2 {
+        color: #d41442;
+        font-family: "Titan One", Arial, Tahoma, sans-serif;
+        font-size: 60px;
+        line-height: 60px;
+        font-weight: 400;
+        letter-spacing: 0px;
+    }
+
+.columns-footer-two {
+    float: left;
+    position: relative;
+}
+
+    .columns-footer-two p {
+        display: inline-flex;
+        padding-left: 400px;
+        font-size: 35px;
+        float: right;
+        width: 100%;
+    }
+
+        .columns-footer-two p a {
+            color: #ffa5ba;
+            border-radius: 100%;
+            padding-right: 20px;
+        }
+
+            .columns-footer-two p a:hover {
+                color: #d41442;
+                transition: 2s;
+            }
+
+            .columns-footer-two p a i {
+                background: #ffa5ba;
+                color: #fff5f7;
+            }
+
+    .columns-footer-two h6 {
+        float: right;
+        width: 100%;
+        font-family: "DM Sans", Arial, Tahoma, sans-serif;
+    }
+
+        .columns-footer-two h6 span {
+            color: #d41442
+        }
+
+.text-contact-footer {
+    margin-top: 20px;
+    font-weight: 500;
+    float: right;
+    font-family: "DM Sans", Arial, Tahoma, sans-serif;
+}
+
+.footer-copy {
+    width: 100%;
+    height: 90px;
+    border-top: 1px solid #b3a0a4;
+}
+
+.copy-right {
+    text-align: center;
+    padding-top: 35px;
+}
+
+    .copy-right span {
+        color: #907e82
+    }
+
+    .copy-right a {
+        color: #ffa5ba;
+    }
+
+        .copy-right a:hover {
+            color: #a8092f;
+            transition: 2s;
+        }
