@@ -1,0 +1,239 @@
+﻿﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff5f7;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.logo {
+    float: left;
+    padding-top: 30px;
+}
+
+.top-bar-left {
+    width: 100%;
+    height: 120px
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+    .logo a span {
+        color: #d41442;
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 400;
+        letter-spacing: 0px;
+        font-family: "Titan One", Arial, Tahoma, sans-serif;
+    }
+
+.menu-wrapper {
+    float: left;
+    height: 120px;
+}
+
+.menu-ul {
+    padding: 30px 50px;
+}
+
+    .menu-ul li {
+        list-style: none;
+        float: left;
+        margin-left: 30px;
+        color: white;
+    }
+
+        .menu-ul li a {
+            text-decoration: none;
+        }
+
+            .menu-ul li a span {
+                color: white;
+                font-family: "DM Sans", Arial, Tahoma, sans-serif;
+                font-size: 16px;
+                position: relative;
+            }
+
+                .menu-ul li a span:hover {
+                    color: #d41442;
+                    transition: 2s
+                }
+/*chỗ này phần menu*/
+
+button {
+    margin: 70px 0;
+    background-color: #d41442;
+    width: 170px;
+    height: 53px;
+    outline: 0;
+    border: 0;
+    border-radius: 25px;
+    color: white;
+}
+
+.form {
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px #d5d3d3
+}
+
+.form-user {
+    background-color: white;
+    width: 68%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px #d5d3d3
+}
+
+    .form, .form-user h4 {
+        font-size: 25px;
+        line-height: 35px;
+        font-weight: 400;
+        letter-spacing: 0px;
+        font-family: 'Titan One', Arial, Tahoma, sans-serif;
+        text-align: center;
+        color: black !important;
+    }
+
+    .form, .form-user p {
+        padding: 0 0 20px;
+        color: #907282;
+        font-size: 16px;
+        text-align: center;
+    }
+
+.content {
+    margin-top: -80px
+}
+
+    .content span {
+        display: inline-block;
+        background: #efd1a5;
+        color: #fff;
+        padding: 0 15px;
+        border-radius: 5px;
+        margin: 50px 15px 15px
+    }
+
+    .content h6 {
+        font-size: 17px;
+        line-height: 28px;
+        font-weight: 550;
+        letter-spacing: 0px;
+        margin: 7px 15px;
+        font-family: 'DM Sans', Arial, Tahoma, sans-serif;
+        color: #000
+    }
+
+    .content p {
+        font-size: 17px;
+        line-height: 28px;
+        font-weight: 550;
+        letter-spacing: 0px;
+        margin: 7px 15px;
+        font-family: 'DM Sans', Arial, Tahoma, sans-serif;
+        color: #907E82
+    }
+
+.form-content {
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px #d5d3d3
+}
+
+.box {
+    width: 40%;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.2);
+    padding: 35px;
+    border: 2px solid #fff;
+    border-radius: 20px/50px;
+    background-clip: padding-box;
+    text-align: center;
+}
+
+/*.button {
+    font-size: 1em;
+    padding: 10px;
+    color: #D41442;
+    border: 2px solid #f68ba4;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+    .button:hover {
+        background: #f68ba4;
+    }*/
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+    .overlay:target {
+        visibility: visible;
+        opacity: 1;
+    }
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff5f7;
+    border-radius: 5px;
+    width: 60%;
+    transition: all 5s ease-in-out;
+    position: absolute;
+    z-index: 9999;
+    margin-left: 300px;
+}
+
+    .popup h2 {
+        margin-top: 0;
+        color: #D41442;
+        font-family: Tahoma, Arial, sans-serif;
+    }
+
+    .popup .close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        transition: all 200ms;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+    }
+
+        .popup .close:hover {
+            color: #fff5f7;
+        }
+
+    .popup .content {
+        max-height: 30%;
+        overflow: auto;
+    }
+
+@media screen and (max-width: 700px) {
+    .box {
+        width: 70%;
+    }
+
+    .popup {
+        width: 70%;
+    }
+}
