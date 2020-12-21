@@ -402,7 +402,235 @@ namespace Ice_Cream.Models
                          Note = "",
                          Price = 1,
                          Category = "Fee"
+                     }, 
+                     new Product
+                     {
+                         Name = "Kem dừa",
+                         Image = "https://media.cooky.vn/recipe/g2/10245/s320x320/recipe10245-prepare-step3-636416025400718968.jpg",
+                         Description = "Kem dừa có vị ngọt nhẹ, thơm đặc trưng, kết hợp với nước cốt dừa béo béo ngon đến không ngờ",
+                         Ingredients = "Nguyên Liệu Làm Kem Dừa:"
+                                            + "6 lòng đỏ trứng gà"
+                                            + "400ml kem tươi (whipping cream độ béo <35 %)"
+                                            + "300ml nước cốt dừa"
+                                            + "150gr đường cát trắng"
+                                            + "5ml tinh chất vani"
+                                            + "Dụng cụ làm kem dừa: máy xay sinh tố, nồi nấu, hộp đựng kem, phới lồng…",
+                         Recipe = "Cách Làm Kem Dừa Không Cần Máy:"
+                                        + "Bước 1: Làm Hỗn Hợp Kem Trứng:"
+                                        + "Cho lòng đỏ trứng vào tô, dùng máy đánh trứng hoặc phới lồng đánh bông hỗn hợp ở tốc độ chậm. Tới khi trứng chuyển màu vàng nhạt và đặc là được."
+                                        + "Bước 2: Nấu Nước Cốt Dừa:"
+                                        + "Tiếp đến, bạn cho nước cốt dừa vào một nồi nhỏ, đun cho tới khi nước cốt dừa vừa sôi chín tới thì tắt bếp. Sau đó, bạn đổ từ từ nước cốt dừa vừa đun vào tô trứng, vừa đổ vừa đảo đều và nhẹ tay. Việc này sẽ giúp lòng đỏ trứng chín đều, không bị tanh."
+                                        + "Bước 3: Đánh Bông Whipping Cream:"
+                                        + "Tiếp đến, bạn cho phần whipping cream vào cối xay sinh tố, dùng phới lồng đánh tơi hỗn hợp khoảng 5 phút để lớp kem bông cứng lên là được."
+                                        + "Bước 4: Đun Sôi Hỗn Hợp Kem Trứng:"
+                                        + "Bước tiếp theo của cách làm kem dừa là cho hỗn hợp sữa dừa cùng với trứng vừa trộn ở bước 1 vào lại nồi, rồi thêm đường, vừa đun vừa khuấy nhẹ nhàng đều tay."
+                                        + "Để kiểm tra hỗn hợp đã đạt chưa, bạn thử bằng cách lấy muỗng khuấy, dùng ngón tay miết một đường từ trên xuống, nếu ngón tay của bạn để lại vết rõ ràng thì lập tức tắt bếp, không đun quá lâu kem sẽ mất hương vị."
+                                        + "Sau đó trộn chung whipping cream và hỗn hợp kem trứng. Rây hỗn hợp kem trứng để loại bỏ hoàn toàn những mẩu trứng đã chín, giúp kem được mịn mượt."
+                                        + "Bước 5: Hoàn Thiện Kem Sữa Dừa:"
+                                        + "Bước tiếp theo của cách làm kem dừa là cho vani vào hỗn hợp. Sau khi vani đã hòa tan đều trong hỗn hợp kem, bạn cho hỗn hợp vào khay, đậy kín lại và đặt vào ngăn đá tủ lạnh để ít nhất là 4 giờ, qua đêm là tốt nhất. Sau đó lấy ra và xới đều lên. Lặp lại thao tác xới đều vài lần để kem đặc, không có hiện tượng dăm đá."
+                                        + "Bước 6: Trang Trí Kem Dừa:"
+                                        + "Bạn rang cơm dừa trong lò nướng 150 độ C hoặc rang sơ trên bếp, trong khoảng 5 – 10 phút. Khi ăn bạn dùng muỗng tròn để múc kem ra cốc rồi rắc cơm dừa đã sấy vàng lên trên và thưởng thức.",
+                         Note = "",
+                         Price = 1,
+                         Category = "Bundle"
+                     },
+                     new Product
+                     {
+                         Name = "Kem khoai môn",
+                         Image = "https://media.cooky.vn/recipe/g1/3172/s480x480/recipe3172-prepare-step6-635881061752592305.jpg",
+                         Description = "Khoai môn là một trong những loại thực phẩm tốt cho sức khỏe nên được sử dụng rất nhiều trong bữa ăn của các gia đình.",
+                         Ingredients = "Nguyên Liệu Làm Kem Khoai Môn:"
+                                        + "1 củ khoai môn (0.5kg)"
+                                        + "3 quả trứng gà"
+                                        + "50gr đường"
+                                        + "500ml whipping cream"
+                                        + "500ml sữa tươi không đường"
+                                        + "1 ít muối"
+                                        + "Dụng cụ làm kem: máy đánh trứng, khuôn làm kem, âu nhỏ, phới lồng…",
+                         Recipe = "Cách Làm Kem Khoai Môn Tại Nhà Đơn Giản"
+                                    + "Bước 1:Sơ Chế Khoai Môn Không Bị Xơ:"
+                                    + "Khoai môn bạn chọn củ tươi, cầm nặng tay, khoai có màu tím để kem có màu đẹp mắt. Sau đó, bạn gọt vỏ, rửa sạch rồi cắt khoai môn thành từng miếng nhỏ, cho vào nồi và hấp cách thủy đến khi khoai chín mềm."
+                                    + "Tiếp theo, bạn cho khoai môn đã hấp chín vào âu nhỏ, dùng muỗng tán nhuyễn qua rây để khoai mịn và không bị xơ."
+                                    + "Bước 2: Đánh Trứng Gà Làm Kem Không Bị Tanh:"
+                                    + "Bạn chuẩn bị âu nhỏ, đập vỏ trứng gà và tách lấy lòng đỏ cho vào âu, thêm vào 50gr đường. Tiếp đó, bạn dùng máy đánh trứng đánh hỗn hợp theo một chiều cho đến khi trứng bông mịn. Sau khi trứng bông mịn, đánh thêm khoảng 30 giây để khử mùi tanh của trứng."
+                                    + "Bước 3: Nấu Sữa:"
+                                    + "Bạn cho vào nồi 500ml sữa tươi thanh trùng không đường, 50gr đường, một xíu muối, khuấy cho tất cả tan đều rồi đặt lên bếp. Bạn đun sữa với lửa nhỏ cho đến khi sữa có hơi nóng bốc lên thì tắt bếp. Bạn lưu ý là không được đun sôi sữa nhé!"
+                                    + "Bước 4: Làm Kem Khoai Môn Không Cần Máy:"
+                                    + "Bạn bật bếp, chỉnh lửa nhỏ, đặt nồi sữa vừa đun lên rồi cho hỗn hợp trứng vào. Bạn vừa cho trứng vừa khuấy đến khi thấy hỗn hợp chuyển sang màu vàng nhạt và hơi sánh lại thì tắt bếp."
+                                    + "Tiếp theo, cho 500ml whipping vào hỗn hợp vừa nấu và đánh bông rồi bạn tiếp tục cho phần khoai môn tán nhuyễn vào đánh đến khi hỗn hợp mịn và bông đều là được."
+                                    + "Bước 5: Làm Đông Kem:"
+                                    + "Cuối cùng, bạn cho kem vào khuôn, đậy kín nắp và đặt trong ngăn đông tủ lạnh từ 6 – 8 tiếng. Cách khoảng 30 – 45 phút, bạn lấy khuôn kem ra, dùng muỗng xới đều. Thao tác này lặp đi lặp lại cho đến khi kem đông là được. Đây là bí quyết giúp cách làm kem khoai môn không cần máy mà vẫn thơm ngon, dẻo mịn và không bị dăm đá.",
+                         Note = "",
+                         Price = 1,
+                         Category = "Bundle"
+                     },
+                     new Product
+                     {
+                         Name = "Kem sữa chua việt quất",
+                         Image = "https://cdn.tgdd.vn/2020/09/CookRecipe/GalleryStep/thanh-pham-186.jpg",
+                         Description = "Vị sữa chua vừa béo, vừa chua thanh, vừa thơm, kết hợp đơn giản cùng với những quả việt quất còn tươi mới mang đến cho bạn một món kem thơm ngon khó cưỡng.",
+                         Ingredients = "Nguyên Liệu Làm Kem Sữa Chua Việt Quất:"
+                                        + "Sữa chua có đường: 200gr.Việt quất tươi: 200gr."
+                                        + "Dụng cụ: máy xay sinh tố, âu nhỏ, cây khuấy, khuôn làm kem.",
+                         Recipe = "Cách Làm Kem Sữa Chua Việt Quất Dạng Que:"
+                                    + "Bước 1: Xay Nát Việt Quất:"
+                                    + "Việt quất tươi bạn mang đi rửa thật sạch, có thể ngâm qua nước muối pha loãng trước khi rửa. Sau đó, cho việt quất ra rổ và để ráo nước hoàn toàn."
+                                    + "Chuẩn bị máy xay sinh tố, cho việt quất vào và nhấn nút xay ở tốc độ nhỏ nhất. Bạn xay đến khi việt quất nát ra là được."
+                                    + "Bước 2: Trộn Hỗn Hợp Việt Quất Sữa Chua:"
+                                    + "Việt quất sau khi xay xong, bạn cho vào âu cùng với sữa chua. Dùng muôi trộn hai nguyên liệu lại với nhau."
+                                    + "Ở bước này, chúng tôi xin mách bạn một thao tác đơn giản nhưng làm món kem đẹp mắt và hấp dẫn hơn. Bạn khuấy hỗn hợp theo hình tròn và một chiều để tạo được những đường vân màu trắng và tím xen kẽ."
+                                    + "Bước 3: “Tạo Hình” Kem Que Tươi Mát:"
+                                    + "Cho hỗn hợp sữa chua việt quất và khuôn làm kem, đậy kín nắp và đặt trong ngăn đá tủ lạnh khoảng 5 – 6 tiếng đồng hồ là có thể thưởng thức hương vị thơm ngon mát lành của món kem.",
+                         Note = "Lưu ý: Lưu ý rằng, việt quất làm kem, bạn nên xay nát, không nên xay nhuyễn. Bởi những miếng việt quất nhỏ trong kem khi thưởng thức sẽ mang đến cảm giác ngon miệng hơn.",
+                         Price = 1,
+                         Category = "Bundle"
+                     },
+                     new Product
+                     {
+                         Name = "Kem tinh than tre",
+                         Image = "https://daynauan.vn/images/kem-tinh-than-tre-1.jpg",
+                         Description = "Khác với than tre hoạt tính chỉ dùng trong mỹ phẩm, bột tinh than tre là loại dùng để uống được, ăn được và sử dụng từ mỹ phẩm đến thực phẩm.",
+                         Ingredients = "Nguyên Liệu Chuẩn Bị:"
+                                        + "1 cup whipping cream."
+                                        + "1 cup sour cream."
+                                        + "1/4 cup bột tinh than tre."
+                                        + "350ml sữa đặc."
+                                        + "1 muỗng bột vỏ chanh bào nhỏ."
+                                        + "1 muỗng nước cốt chanh."
+                                        + "1 muỗng vanilla extract."
+                                        + "Dụng cụ: Máy đánh trứng hoặc phới, khay đá, âu inox, tô, spatula (dụng cụ vét bột).",
+                         Recipe = "Cách Làm Kem Tinh Than Tre Tại Nhà:"
+                                    + "Bước 1: Cho whipping cream + 1/3 khối lượng tinh than tre có trong công thức vào một chiếc tô lớn rồi dùng máy đánh trứng cầm tay hoặc phới lồng đánh hỗn hợp bông lên cho tới khi whipping bông cứng."
+                                    + "Bước 2: Cho sour cream + sữa đặc vào một chiếc tô khác rồi cho thêm nước cốt chanh + vỏ chanh bào + vanilla extract + lượng bột tinh than tre còn lại vào. Tiếp tục dùng phới lồng khuấy đều để các nguyên liệu hòa quyện với nhau."
+                                    + "Bước 3: Dùng spatulla lấy từng phần whipping đánh bông cứng với bột tinh than tre ở bước 1 trộn đều với hỗn hợp ở bước 2. Sau đó bạn sử dụng phương pháp trộn fold để kem không bị xẹp trong quá trình thực hiện. Lặp lại các động tác này cho đến khi hết kem và hỗn hợp được hòa quyện hoàn toàn."
+                                    + "Bước 4: Đổ hỗn hợp đã trộn 3 vào trong khuôn kem được chuẩn bị sẵn rồi cho kem vào tủ lạnh khoảng 3 – 4h để kem đông hẳn. Cuối cùng, bạn có thể lấy kem ra, thêm topping tùy thích rồi thưởng thức hoặc có thể múc kem vào những chiếc vỏ ốc quế xinh xắn trước khi ăn.",
+                         Note = "Những Lưu Ý Cần Biết Cho Món Kem Thêm Đặc Biệt:"
+                                + "Nếu bạn thích kem màu đen đậm, bạn có thể cho nhiều tinh than tre hơn, nhưng nếu bạn thích màu xám nhẹ thì chỉ cần một lượng nhỏ tinh than tre là được."
+                                + "Cần mua bột tinh than tre Nhật Bản loại chất lượng. Tránh những sản phẩm than tre, than củi hoặc không rõ nguồn gốc rất dễ nguy hại."
+                                + "Vỏ chanh được sử dụng làm kem luôn luôn là loại chanh vàng. Bạn chú ý bào vỏ thật nhỏ, ướp với một ít đường cát để kích mùi kích vị cho món kem đặc sắc này nhé."
+                                + "Để whipping bông nhanh hơn, bạn nên cho âu, dụng cụ đánh trứng vào ngăn đá tủ lạnh khoảng 15 phút trước khi thực hiện. Whipping cũng cần được bảo quản trong tủ lạnh, khi dùng mới lấy ra, không để ở ngoài quá lâu."
+                                + "Lót một chiếc khay đá ngay dưới đáy tô trong quá trình đánh kem để đảm bảo kem được lạnh liên tục và không bị chảy nước khi mấy đánh trứng công suất yêu hoặc đánh bằng phới lồng không liên tục."
+                                + "Nếu bạn thực hiện bước 2 chậm thì hỗn hợp đã đánh bông cứng ở bước 1 rất dễ bị tan chảy ở nhiệt độ thường nên cách tốt nhất là bạn nên bảo quản hỗn hợp trong ngăn mát tủ lạnh. Thực hiện hoàn tất bước 2, bạn mới mang chúng ra."
+                                + "Khi chưa quen với phương pháp trộn fold, bạn có thể sử dụng phới lồng để trộn. Nhưng trong quá trình trộn, bạn chú ý thật nhanh tay và chỉ trộn theo một chiều."
+                                     + "Chúc các bạn thành công với cách làm kem tinh than tre ngon và bổ dưỡng này!",
+                         Price = 1,
+                         Category = "Bundle"
+                     },
+                     new Product
+                     {
+                         Name = "Kem tuyết dứa (sorber)",
+                         Image = "https://i.pinimg.com/736x/ff/3e/2a/ff3e2a012426c627ce6f41cc94034167.jpg",
+                         Description = "Dứa là một nguyên liệu khá quen thuộc trong nấu ăn. Bên cạnh đó dứa còn được sử dụng như một loại nước uống giải khát và làm kem mát lạnh.",
+                         Ingredients = "Nguyên Liệu Chuẩn Bị:"
+                                        + "1 quả dứa."
+                                        + "2 muỗng Maple Syrup."
+                                        + "½ muỗng muối ăn."
+                                        + "Dụng cụ: hộp có nắp đậy, giấy bọc thực phẩm, máy xay sinh tố.",
+                         Recipe = "Cách Làm Kem Dứa Tuyết Sorbet:"
+                                    + "Bước 1: Rửa sạch, cắt bỏ vỏ và mắt dứa thật sạch sẽ. Vì nếu không cắt mắt dứa sạch thì kem sẽ không được nhuyễn."
+                                    + "Bước 2: Cắt quả dứa thành từng khối hình vuông nhỏ khoảng 2-3 cm."
+                                    + "Bước 3: Sau đó sắp xếp dứa thành lớp trong hộp có nắp đậy, hoặc sử dụng giấy bọc thực phẩm, bọc lại thật kín. Bỏ vào tủ lạnh ủ đông trong vòng 1-2 tiếng. Tránh để dứa đông thành đá nhé."
+                                    + "Bước 4: Cho 2 muỗng Maple Syrup vào dứa đã ủ đông. ½ muỗng muối ăn vào để điều hòa lượng axit trong món kem Dứa này. Tùy vào sở thích độ ngọt mà các bạn cho thêm Syrup vào kem. Sau đó bỏ vào máy xay sinh tố, xay thật nhuyễn."
+                                    + "Bước 5: Đổ hỗn hợp vừa mới xay ra hộp có nắp đậy hoặc cốc nhỏ. Sau đó ủ đông cho hỗn hợp đông lại và sử dụng sau 30 phút."
+                                    + "Vậy là chúng ta đã hoàn thành xong món kem dứa với cách làm kem dứa đơn giản này rồi. Món kem dứa có thể đi kèm với kem chuối, kem bơ hoặc nước cốt dừa nhằm gia tăng hương vị & độ béo tự nhiên trong kem.",
+                         Note = "",
+                         Price = 1,
+                         Category = "Bundle"
+                     },
+                     new Product
+                     {
+                         Name = "Kem kẹo bông",
+                         Image = "https://images.foody.vn/images/M5lPQEwzCoXiHENVvk7109zuEVo9OPd9-o-960.jpg",
+                         Description = "Nếu bạn từng một thời mê đắm kẹo bông và đang muốn tìm lại mùi vị cây kẹo tuổi thơ trong một hình thức hoàn toàn mới, kem kẹo bông sẽ là một gợi ý vừa hợp tình vừa hợp cảnh.",
+                         Ingredients = "Nguyên Liệu Chuẩn Bị:"
+                                        + "200ml sữa tươi không đường"
+                                        + "500ml whipping cream."
+                                        + "250gr đường cát trắng."
+                                        + "Syrup hương kẹo bông."
+                                        + "2 muỗng canh bột bắp."
+                                        + "1 – 2 cây kẹo bông."
+                                        + "Dụng cụ: máy đánh trứng, khay, khuôn kem.",
+                         Recipe = "Cách làm:"
+                                    + "Bước 1: Chia sữa tươi thành 2 phần, 1 phần cho vào whipping cream rồi dùng máy đánh trứng đánh bông lên."
+                                    + "Bước 2: Cho bột bắp, đường vào sữa sau đó để lên bếp đun nhỏ lửa cho đến khi đường tan hết thì tắt bếp. Khuấy đều tay một lần nữa cho hỗn hợp nhanh nguội rồi cho vào phần whipping cream đã đánh bông lên."
+                                    + "Bước 3: Cho 1 – 2 pump syrup hương kẹo bông, vani vào phần whipping cream vừa trộn, tiếp tục trộn đều thêm một lần nữa."
+                                    + "Syrup hương kẹo bông thường có 2 màu chủ yếu là hồng hoặc xanh. Nếu không thêm vào chất tạo màu thực phẩm, kem kẹo bông sẽ có màu hồng hoặc xanh nhạt. Thường syrup kẹo bông được bán theo chai lớn, bạn có thể bảo quản để dùng nhiều lần."
+                                    + "Bước 4: Cho hỗn hợp vừa trộn vào khay lớn rồi cho vào tủ lạnh. Khoảng 1 giờ sau, lấy kem ra xới đều. Ở bước xới kem này, bạn có thể xé sợi kẹo bông cho vào kem rồi mới đổ ra khay. Tiếp tục khoảng 30 phút – 1 tiếng lấy kem ra xới (xới khoảng 3 lần) sau đó để lại vào tủ lạnh.",
+                         Note = "",
+                         Price = 1,
+                         Category = "Bundle"
+                     },
+                     new Product
+                     {
+                         Name = "Kem kiwi",
+                         Image = "https://cdn.dayphache.edu.vn/wp-content/uploads/2016/04/kem-kiwi-min-xot.jpg",
+                         Description = "Món kem kiwi xanh mát, đẹp mắt với vị ngọt béo, chua thanh nhẹ hòa quyện vào nhau đã không còn xa lạ nhưng bạn đã bao giờ tự tay làm món kem này chưa?",
+                         Ingredients = "Nguyên Liệu Làm Kem Kiwi:"
+                                        + "500 gram kiwi."
+                                        + "2 trái chanh tươi."
+                                        + "100 ml sữa đặc có đường."
+                                        + "200 ml whipping cream, heavy cream."
+                                        + "30 gram đường cát trắng."
+                                        + "Dụng cụ: Máy xay sinh tố, rây lọc, dụng cụ đánh trứng, hộp nhựa làm kem…",
+                         Recipe = "Cách Làm Kem Kiwi:"
+                                    + "Bước 1: Chanh tươi vắt lấy nước cốt. Tách kỹ hạt chanh để món kem ngon và không bị đắng."
+                                    + "Bước 2: Kiwi gọt vỏ, thái miếng nhỏ. Trộn kiwi với 30 gram đường, nước cốt chanh, bọc kỹ bằng màng thực phẩm rồi cho vào ngăn mát tủ lạnh 1 giờ. Tiếp đó, lấy hỗn hợp này ra cho vào máy xay sinh tố, nhấn nút xay trong 30 giây. Vì kiwi rất mềm nên xay nhanh, không cần xay kỹ quá. Kiwi còn giữ lại chút thịt quả và nguyên hạt sẽ đẹp mắt hơn. Rây qua nếu bạn không thích hạt kiwi."
+                                    + "Bước 3: Cho hỗn hợp kiwi vào âu lớn cùng 200 ml sữa tươi, 100 ml sữa đặc có đường, 200 ml kem tươi, 30 gram đường trắng. Dùng dụng cụ đánh trứng đánh bông đều trong vài phút (tùy theo dụng cụ đánh trứng bằng tay hay máy). Lưu ý đánh theo 1 chiều với tốc độ tăng dần để các nguyên liệu hòa vào nhau."
+                                    + "Bước 4: Đổ hỗn hợp ra một cái hộp hoặc khay. Cho vào ngăn đá tủ lạnh, cứ 30 – 40 phút kiểm tra một lần rồi lấy thìa trộn thật kỹ, sau đó lại đặt trở lại tủ lạnh. Làm như vậy ít nhất 4 giờ, đến khi kem đông lại."
+                                    + "Bước 5: Khi thưởng thức, dùng dụng cụ múc kem thành những viên tròn, cho ra ly. Rưới nhẹ lên trên vài đường sữa đặc, chocolate, 1 lát kiwi mỏng, ít lá bạc hà, bánh quế tùy ý.",
+                         Note = "",
+                         Price = 1,
+                         Category = "Bundle"
+                     },
+                     new Product
+                     {
+                         Name = "Kem nho",
+                         Image = "https://dayphache.edu.vn/wp-content/uploads/2016/03/kem-nho.jpg",
+                         Description = "Muốn làm dịu bớt cái nắng cái nóng của những ngày đầu hè, còn gì hay hơn là thưởng thức một ly kem nho ngọt ngào, mát lạnh phải không nào?",
+                         Ingredients = "Nguyên Liệu Làm Kem Nho Đơn Giản:"
+                                        + "200 gram sữa tươi không đường."
+                                        + "220 kem whipping cream."
+                                        + "2 thìa cà phê sữa đặc."
+                                        + "1 lòng đỏ trứng gà."
+                                        + "1/5 thìa cà phê muối"
+                                        + "130 gram đường."
+                                        + "250 gram nho tươi."
+                                        + "½ thìa cà phê nước cốt chanh."
+                                        + "Dụng cụ làm kem nho: tô trộn, rây lọc, máy đánh trứng cầm tay, hộp đựng kem, muỗng, nĩa…",
+                         Recipe = "Hướng Dẫn Cách Làm Kem Nho:"
+                                    + "Bước 1: Cho nho vào tô cùng 70 gram đường, nước cốt chanh. Trộn đều. Sau đó cho vào ngăn đá tủ lạnh 40 phút. Sau 40 phút lấy nho ra nghiền nhuyễn. Ép kỹ qua rây để làm syrup nho."
+                                    + "Bước 2: Cho trứng, sữa đặc, muối và đường vào tô khác. Dùng cây đánh trứng cầm tay đánh bông lên cho tất cả các nguyên liệu này hòa quyện vào nhau."
+                                    + "Bước 3: Trộn syrup nho, whipping cream vào âu trứng. Trộn đều."
+                                    + "Bước 4: Đổ hỗn hợp này vào hộp đựng kem, để vào ngăn đá tủ lạnh. Cứ 1 – 2 tiếng lấy kem ra trộn đều 1 lần cho đến khi kem mịn, không bị dăm đá. Thưởng thức ngay hương vị thơm ngon tự nhiên vô cùng đặc biệt, hấp dẫn của món kem này.",
+                         Note = "",
+                         Price = 1,
+                         Category = "Bundle"
+                     },
+                     new Product
+                     {
+                         Name = "Kem bơ Đà Lạt",
+                         Image = "https://amazingdalat.com/media/images/thumbnail/kem-bo-da-lat.jpg",
+                         Description = "Kem bơ Đà Lạt là đặc sản trứ danh của “thành phố sương mù” mà bất cứ ai khi đặt chân đến đây cũng tìm kiếm để thưởng thức.",
+                         Ingredients = "Nguyên Liệu Làm Kem Bơ:"
+                                        + "Bơ: 2 quả"
+                                        + "Whipping cream: 345ml"
+                                        + "Sữa đặc có đường: 240g"
+                                        + "Sữa tươi: 30ml"
+                                        + "Nước cốt dừa: 150ml"
+                                        + "Vani: 3 muỗng cà phê"
+                                        + "Cùi dừa: 200g"
+                                        + "Đậu phộng rang hoặc hạnh nhân lát rang vàng",
+                         Recipe = "Cách Làm Kem Bơ Đà Lạt:"
+                                    + "Bước 1: Làm Kem Dừa"
+                                    + "Cùi dừa sau khi tách khỏi vỏ, bạn gọt sạch lớp vỏ mỏng rồi cắt hạt lựu nhỏ."
+                                    + "Chuẩn bị một tô sạch, cho 300ml whipping cream vào rồi dùng máy đánh trứng đánh ở tốc độ nhỏ nhất. Đánh đến khi kem trở nên đặc lại, mịn mượt và tạo vân."
+                                    + "Cho 190g sữa đặc có đường, 150ml nước cốt dừa, 2 muỗng cà phê vani và toàn bộ phần cùi dừa cắt hạt lựu vào tô kem. Dùng spatula trộn đều hỗn hợp theo kiểu fold (trộn nhẹ nhàng từ dưới đáy và đảo ngược lên trên) đến khi hòa quyện."
+                                    + "Cho hỗn hợp vào hộp hoặc khuôn, dùng màng bọc thực phẩm bọc lại, để vào ngăn đá từ 4 – 8 tiếng là dùng được.",
+                         Note = "Lưu ý: Khi đánh kem tươi thấy tạo vân là dừng ngay, không tiếp tục đánh, nếu không kem sẽ bị tách nước và không sử dụng được.",
+                         Price = 1,
+                         Category = "Bundle"
                      }
+
                     );
                      
                 context.SaveChanges();

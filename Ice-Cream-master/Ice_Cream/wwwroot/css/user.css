@@ -1,0 +1,21 @@
+﻿﻿.m-1 {
+    background-image: url(https://d12man5gwydfvl.cloudfront.net/wp-content/uploads/2020/06/shutterstock_645817942.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    margin: 0 !important;
+}
+
+.row {
+    margin: 100px 0 100px;
+}
+
+.information {
+    background-color: rgba(255, 255, 255, 0.76);
+    padding: 30px 10px 20px 10px;
+    border-radius: 8px;
+}
+
+.submit {
+    float: right;
+}

@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Ice_Cream.Migrations
 {
     [DbContext(typeof(StoreDbContext))]
-    [Migration("20201219101931_InititalS")]
-    partial class InititalS
+    [Migration("20201221133510_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

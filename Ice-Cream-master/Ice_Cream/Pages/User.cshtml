@@ -1,45 +1,41 @@
 ﻿@page
 @model Ice_Cream.Pages.UserModel
 
+<environment>
+    <link rel="stylesheet" href="/css/user.css" />
+</environment>
 
-<form method="post">
-    <table cellpadding="2" cellspacing="2">
-        <tr>
-            <td>Name</td>
-            <td>
-                <input type="text" asp-for="customer.CustomerName" />
-            </td>
-        </tr>
-        <tr>
-            <td>Birthday</td>
-            <td>
-                <input type="text" asp-for="customer.Birthday" />
-            </td>
-        </tr>
-        <tr>
-            <td>Address</td>
-            <td>
-                <input type="text" asp-for="customer.Address" />
-            </td>
-        </tr>
-        <tr>
-            <td>Email</td>
-            <td>
-                <input type="text" asp-for="customer.Email" />
-            </td>
-        </tr>
-        <tr>
-            <td>Phone</td>
-            <td>
-                <input type="text" asp-for="customer.Phone" />
-            </td>
-        </tr>
-        <tr>
-            <td>&nbsp;</td>
-            <td>
-                <input type="submit" value="Save" />
-            </td>
-        </tr>
-    </table>
 
-</form>
+<div class="container">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6 information">
+            <form method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" asp-for="customer.CustomerName" />
+                </div>
+                <div class="form-group">
+                    <label for="birth">Birthday:</label>
+                    <input type="date" class="form-control" asp-for="customer.Birthday" />
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" class="form-control" asp-for="customer.Address" />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" asp-for="customer.Email" />
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Phone:</label>
+                    <input type="text" class="form-control" asp-for="customer.Phone" />
+                </div>
+                <div class="submit">
+                    <input type="submit" class="btn btn-danger btn-md" value="Save" />
+                </div>
+            </form>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>

@@ -2,7 +2,7 @@
 
 namespace Ice_Cream.Migrations
 {
-    public partial class InititalS : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
