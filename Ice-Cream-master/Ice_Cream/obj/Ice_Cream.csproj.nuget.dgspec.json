@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Downloads\\IceCream2-an\\Ice-Cream-master\\Ice_Cream\\Ice_Cream.csproj": {}
+    "D:\\Visual studio code\\TeamVit\\IceCream2\\Ice-Cream-master\\Ice_Cream\\Ice_Cream.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Downloads\\IceCream2-an\\Ice-Cream-master\\Ice_Cream\\Ice_Cream.csproj": {
+    "D:\\Visual studio code\\TeamVit\\IceCream2\\Ice-Cream-master\\Ice_Cream\\Ice_Cream.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Downloads\\IceCream2-an\\Ice-Cream-master\\Ice_Cream\\Ice_Cream.csproj",
+        "projectUniqueName": "D:\\Visual studio code\\TeamVit\\IceCream2\\Ice-Cream-master\\Ice_Cream\\Ice_Cream.csproj",
         "projectName": "Ice_Cream",
-        "projectPath": "C:\\Users\\Admin\\Downloads\\IceCream2-an\\Ice-Cream-master\\Ice_Cream\\Ice_Cream.csproj",
+        "projectPath": "D:\\Visual studio code\\TeamVit\\IceCream2\\Ice-Cream-master\\Ice_Cream\\Ice_Cream.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Downloads\\IceCream2-an\\Ice-Cream-master\\Ice_Cream\\obj\\",
+        "outputPath": "D:\\Visual studio code\\TeamVit\\IceCream2\\Ice-Cream-master\\Ice_Cream\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

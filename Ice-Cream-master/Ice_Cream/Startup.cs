@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Ice_Cream.Models;
 using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace Ice_Cream
 {
@@ -20,6 +21,7 @@ namespace Ice_Cream
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDistributedMemoryCache();
             services.AddControllersWithViews();
             services.AddDbContext<StoreDbContext>(
                 opts =>
@@ -29,9 +31,17 @@ namespace Ice_Cream
 
             services.AddScoped<IStoreRepository, EFStoreRepository>();
             services.AddRazorPages();
+            services.AddMvc();
+
 
             services.AddDistributedMemoryCache();
-            services.AddSession();
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromSeconds(20);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
+
 
 
 
@@ -53,6 +63,8 @@ namespace Ice_Cream
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
+
+
             app.UseSession();
 
             app.UseRouting();
@@ -62,7 +74,7 @@ namespace Ice_Cream
             {
                 //endpoints.MapControllerRoute(
                 //name: "default",
-                //pattern: "{controller=Home}/{action=Index}/{id?}");
+                //pattern: "{controller=Recipe}/{action=Index}/{id?}");
 
                 endpoints.MapControllerRoute("Id", "{Id}",
                     new { Controller = "Recipe", action = "Detail" });

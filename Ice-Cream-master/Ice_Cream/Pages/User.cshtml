@@ -1,0 +1,45 @@
+﻿@page
+@model Ice_Cream.Pages.UserModel
+
+
+<form method="post">
+    <table cellpadding="2" cellspacing="2">
+        <tr>
+            <td>Name</td>
+            <td>
+                <input type="text" asp-for="customer.CustomerName" />
+            </td>
+        </tr>
+        <tr>
+            <td>Birthday</td>
+            <td>
+                <input type="text" asp-for="customer.Birthday" />
+            </td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td>
+                <input type="text" asp-for="customer.Address" />
+            </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>
+                <input type="text" asp-for="customer.Email" />
+            </td>
+        </tr>
+        <tr>
+            <td>Phone</td>
+            <td>
+                <input type="text" asp-for="customer.Phone" />
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>
+                <input type="submit" value="Save" />
+            </td>
+        </tr>
+    </table>
+
+</form>
