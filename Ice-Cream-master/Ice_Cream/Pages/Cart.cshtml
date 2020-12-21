@@ -1,27 +1,32 @@
 ﻿@page
 
 @model CartModel
-<link rel="stylesheet" href="~/css/Cart.css" />
+
+
+
+
 
 
 <section class="col-xs-12 col-md-12 mt-4">
+
     <div class="container">
+
         <div class="row">
             <h4 class="text-center font-weight-bold mb-4 mt-4 col-xs-12 col-md-12">Shopping Cart</h4>
 
-            <div class="basket-module text-center col-xs-12 col-md-12 mb-4">
-                <label for="promo-code" class="mt-2 mb-2">Enter a promotional code</label>
-                <br />
-                <input id="promo-code mt-2 mb-2" type="text" name="promo-code" maxlength="5" class="promo-code-field">
-                <br />
-                <button class="promo-code-cta btn btn-success mt-2 mb-2">Apply</button>
-            </div>
+            @*<div class="basket-module text-center col-xs-12 col-md-12 mb-4">
+                    <label for="promo-code" class="mt-2 mb-2">Enter a promotional code</label>
+                    <br />
+                    <input id="promo-code mt-2 mb-2" type="text" name="promo-code" maxlength="5" class="promo-code-field">
+                    <br />
+                    <button onclick="getPromoCode()" class="promo-code-cta btn btn-success mt-2 mb-2">Apply</button>
+                </div>*@
 
             <div class="shopping-list col-xs-8 col-md-8">
                 <table class="table table-bordered table-striped text-center">
                     <thead>
                         <tr class="text-center p-2">
-                            <td style="width: 30%;">Product Detail</td>
+                            <td style="width: 30%;">Product Image</td>
                             <td style="width: 20%;">Product Name</td>
                             <td style="width: 20%;">Category</td>
                             <td>Price</td>
@@ -31,57 +36,50 @@
                     <tbody>
                         @foreach (var line in Model.Cart.Lines)
                         {
-                            <tr class="text-center p-2">
-                                <td class="product-detail">
-                                    <img src="@line.Product.Image"
-                                         alt="product-image"
-                                         class="product-frame">
-                                </td>
-                                <td class="product-description">
-                                    <span>@line.Product.Name</span>
-                                </td>
-                                <td class="product-category">
-                                    <span>@line.Product.Category</span>
-                                </td>
-                                <td class="product-total">
-                                    <span>@line.Product.Price.ToString("c")</span>
-                                </td>
-                                <td>
-                                    <a href="/remove/{@line.Product.ProductID}" class="btn btn-danger">Remove</a>
-                                </td>
-                            </tr>
+                            <form method="post" asp-page-handler="remove" id="@line.ID">
+                                <tr class="text-center p-2">
+                                    <td class="product-detail">
+                                        <img src="@line.Product.Image"
+                                             alt="product-image"
+                                             class="product-frame">
+                                    </td>
+                                    <td class="product-description">
+                                        <span>@line.Product.Name</span>
+                                    </td>
+                                    <td class="product-category">
+                                        <span>@line.Product.Category</span>
+                                    </td>
+                                    <td class="product-total">
+                                        <span>@line.Product.Price.ToString("c")</span>
+                                    </td>
+                                    <td>
+
+                                        <button type="submit" class="btn btn-danger">Remove</button>
+
+                                    </td>
+                                </tr>
+                                <input type="hidden" name="productId" value="@line.ID" />
+
+                            </form>
+
                         }
                     </tbody>
                 </table>
             </div>
-
-            <div class="order-summary col-xs-4 col-md-4">
-                <div class="summary">
-                    <div class="summary-total-items"><span class="total-items"></span>Items in your Bag</div>
-                    <div class="summary-subtotal">
-                        <div class="summary-promo hide">
-                            <div class="promo-title">Promotion:</div>
-                        </div>
-                    </div>
-                    <div class="summary-delivery">
-                        <select name="delivery-collection" class="summary-delivery-selection">
-                            <option value="0" selected="selected">Choose the form of payment</option>
-                            <option value="collection">Payment on delivery</option>
-                            <option value="first-class">Payment through electronic wallet</option>
-                            <option value="second-class">Payment via bank account</option>
-                            <option value="signed-for">Pay by credit card</option>
-                        </select>
-                    </div>
-                    <div class="summary-total">
-                        <div class="total-title">Total:</div>
-                        <div class="total-value final-value" id="basket-total">@Model.Cart.ComputeTotalValue().ToString("c")</div>
-                    </div>
-                    <div class="summary-checkout">
-                        <button class="checkout-cta btn btn-success">Go to Secure Checkout</button>
-                    </div>
+            <br />
+            <div class="col-md-4">
+                <div>
+                    <a asp-page="Checkout" style="width: 90%; height: 50px; padding-top: 10px;" class="btn btn-success">Go to Check out</a>
+                </div><br />
+                <div>
+                    <a asp-page="User" style="width: 90%; height: 50px; padding-top: 10px;" class="btn btn-success">Get info</a>
                 </div>
             </div>
+
+            <br />
+
+
         </div>
     </div>
-</section>
 
+</section>

@@ -8,6 +8,7 @@ namespace Ice_Cream.Models
 
         public DbSet<Product> Products { get; set; }
         public DbSet<Customer> Customers { get; set; }
-        
+        public DbSet<Bill> Bills { get; set; }
+
     }
 }

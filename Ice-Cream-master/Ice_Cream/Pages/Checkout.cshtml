@@ -1,0 +1,79 @@
+﻿@page
+@model Ice_Cream.Pages.CheckoutModel
+<environment>
+    <link rel="stylesheet" href="/css/checkout.css" />
+</environment>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-7">
+            <form method="post" asp-page-handler="checkout">
+                <div class="summary-delivery">
+                    <select name="CatePayment" asp-for="bill.catePayment" class="summary-delivery-selection">
+                        <option value="null" selected="selected">Choose the form of payment</option>
+                        <option value="delivery">Payment on delivery</option>
+                        <option value="electionic-wallet">Payment through electronic wallet</option>
+                        <option value="via-bank-account">Payment via bank account</option>
+                        <option value="credit-card">Pay by credit card</option>
+                    </select>
+                </div>
+
+                <div>
+
+                    <input type="hidden" asp-for="bill.TotalPrice" value="@Model.Cart.ComputeTotalValue()" />
+                </div>
+            </form>
+        </div>
+
+
+        <div class="summary-checkout col-md-4">
+            <button type="submit" class="btn btn-success">Go to Secure Checkout</button>
+        </div>
+
+
+        <div class="title-checkout">Items in your Bag</div>
+
+        <table class="table" style="background-color:white">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            @foreach (var line in @Model.Cart.Lines)
+            {
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>@line.Product.Name</td>
+                        <td>@line.Product.Category</td>
+                        <td>@line.Product.Price.ToString("c")</td>
+                    </tr>
+
+                </tbody>
+            }
+        </table>
+
+        @*<tr>
+                <td class="product-description">
+                    <span>@line.Product.Name</span>
+                </td>
+                <td class="product-category">
+                    <span>@line.Product.Category</span>
+                </td>
+                <td class="product-total">
+                    <span>@line.Product.Price.ToString("c")</span>
+                </td>
+            </tr>*@
+
+        <div>
+            <div class="btn btn-danger">Total: @Model.Cart.ComputeTotalValue().ToString("c")</div>
+        </div>
+
+
+    </div>
+</div>

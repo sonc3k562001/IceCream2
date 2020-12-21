@@ -871,3 +871,5 @@ D:\Visual Studio 2019\EAP\Team\Ice-Cream-master\Ice_Cream\obj\Debug\netcoreapp3.
 D:\Visual Studio 2019\EAP\Team\Ice-Cream-master\Ice_Cream\obj\Debug\netcoreapp3.1\Ice_Cream.dll
 D:\Visual Studio 2019\EAP\Team\Ice-Cream-master\Ice_Cream\obj\Debug\netcoreapp3.1\Ice_Cream.pdb
 D:\Visual Studio 2019\EAP\Team\Ice-Cream-master\Ice_Cream\obj\Debug\netcoreapp3.1\Ice_Cream.genruntimeconfig.cache
+D:\Visual Studio 2019\EAP\Team\Ice-Cream-master\Ice_Cream\obj\Debug\netcoreapp3.1\Razor\Pages\Checkout.cshtml.g.cs
+D:\Visual Studio 2019\EAP\Team\Ice-Cream-master\Ice_Cream\obj\Debug\netcoreapp3.1\Razor\Pages\User.cshtml.g.cs
