@@ -1,0 +1,84 @@
+﻿@model Ice_Cream.Models.Customer
+
+<environment>
+    <link rel="stylesheet" href="/css/login.css" />
+</environment>
+
+<div class="info-signup">
+@*chỗ này phần menu*@
+    <div style="background:#f9b3cf;">
+        <div class="container">
+            <div class="top-bar-left">
+                <div class="logo">
+                    <a href="/#"><span>ICE CREAM</span></a>
+                </div>
+                <div class="menu-wrapper">
+                    <ul class="menu-ul">
+                        <li><a asp-controller="Home" asp-action="Index"><span>Home</span></a></li>
+                        <li><a asp-controller="Recipe" asp-action="Index"><span style="color:#d41442;font-size:20px">Recipe</span></a></li>
+                        <li><a asp-controller="About" asp-action="Index"><span>About</span></a></li>
+                        <li><a asp-controller="Contact" asp-action="Index"><span>Contact</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="top-bar-right">
+                <div class="login">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7"></div>
+            <div class="col-md-5 information">
+                <h2 class="text-center">Sign up</h2>
+                <form asp-action="SignUp">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group">
+                            <div class="form-group name-left">
+                                <label class="control-label">Name:</label>
+                                <input asp-for="CustomerName" class="form-control" />
+                                <span asp-validation-for="CustomerName" class="text-danger"></span>
+                            </div>
+                            <div class="form-group username-right">
+                                <label class="control-label">Username:</label>
+                                <input type="text" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Phone:</label>
+                            <input asp-for="Phone" class="form-control" />
+                            <span asp-validation-for="Phone" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Email</label>
+                            <input asp-for="Email" type="email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Birthday:</label>
+                            <input asp-for="Birthday" type="date" class="form-control" />
+                            <span asp-validation-for="Birthday" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Address:</label>
+                            <input asp-for="Address" class="form-control" />
+                            <span asp-validation-for="Address" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                                <span>
+                                    <input type="checkbox" id="checkbox_user_agree_to_term" name="user[agree_to_term]">
+                                    <label for="checkbox_user_agree_to_term">Creating an account means you’re okay with our Terms of Service, Privacy Policy, and our default Notification Settings.</label>
+                                </span>
+                        </div>
+                        <div class="form-group submit">
+                            <input type="submit" value="CREATE ACCOUNT" class="btn btn-danger btn-md" />
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

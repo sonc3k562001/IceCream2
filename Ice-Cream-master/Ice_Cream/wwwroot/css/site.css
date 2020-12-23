@@ -254,3 +254,22 @@ section {
     color: #d41442;
     margin: 50px 0;
 }
+
+
+/*phần login, sign up*/
+
+.login{
+    float:right;
+    margin-top:30px;
+    margin-right:-50px;
+}
+.login .menu-login .btn-danger {
+    background-color: #ffa5ba;
+    border-radius: 20px;
+    border:none;
+}
+.login .menu-login li{
+    list-style:none;
+    float:left;
+    margin-left:10px;
+}

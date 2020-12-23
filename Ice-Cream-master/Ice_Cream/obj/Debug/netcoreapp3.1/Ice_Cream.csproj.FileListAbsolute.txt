@@ -873,3 +873,7 @@ D:\Visual Studio 2019\EAP\Team\Ice-Cream-master\Ice_Cream\obj\Debug\netcoreapp3.
 D:\Visual Studio 2019\EAP\Team\Ice-Cream-master\Ice_Cream\obj\Debug\netcoreapp3.1\Ice_Cream.genruntimeconfig.cache
 D:\Visual Studio 2019\EAP\Team\Ice-Cream-master\Ice_Cream\obj\Debug\netcoreapp3.1\Razor\Pages\Checkout.cshtml.g.cs
 D:\Visual Studio 2019\EAP\Team\Ice-Cream-master\Ice_Cream\obj\Debug\netcoreapp3.1\Razor\Pages\User.cshtml.g.cs
+D:\Visual Studio 2019\EAP\Team\Ice-Cream-master\Ice_Cream\obj\Debug\netcoreapp3.1\Razor\Views\Login\SignUp.cshtml.g.cs
+D:\Visual Studio 2019\EAP\Team\Ice-Cream-master\Ice_Cream\obj\Debug\netcoreapp3.1\Razor\Views\Login\Index.cshtml.g.cs
+D:\Visual Studio 2019\EAP\Team\Ice-Cream-master\Ice_Cream\obj\Debug\netcoreapp3.1\Razor\Views\Login\PasswordReset.cshtml.g.cs
+D:\Visual Studio 2019\EAP\Team\Ice-Cream-master\Ice_Cream\obj\Debug\netcoreapp3.1\Razor\Views\Login\PasswordChange.cshtml.g.cs
