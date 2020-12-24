@@ -575,3 +575,8 @@ footer {
             color: #a8092f;
             transition: 2s;
         }
+
+h2, h3{
+    font-family: 'Titan One', Arial, Tahoma, sans-serif;
+    color: #d41442;
+}

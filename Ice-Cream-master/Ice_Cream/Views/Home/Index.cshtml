@@ -16,7 +16,7 @@
                         <li><a asp-controller="Recipe" asp-action="Index"><span>Recipe</span></a></li>
                         <li><a asp-controller="About" asp-action="Index"><span>About</span></a></li>
                         <li><a asp-controller="Contact" asp-action="Index"><span>Contact</span></a></li>
-                        <li><a asp-controller="Recipe" asp-action="Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                        
                     </ul>
                 </div>
                 @*thêm login, sign up*@
@@ -24,6 +24,7 @@
                     <ul class="menu-login">
                         <li><a asp-controller="Login" asp-action="SignUp" class="btn btn-danger btn-md"><span>Sign up</span></a></li>
                         <li><a asp-controller="Login" asp-action="Index" class="btn btn-danger btn-md"><span>Login</span></a></li>
+                        <li><a asp-page="/Cart" class="cart"><i class="fas fa-shopping-cart"></i></a></li>
                     </ul>
                 </div>
             </div>

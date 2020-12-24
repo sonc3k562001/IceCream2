@@ -273,3 +273,15 @@ section {
     float:left;
     margin-left:10px;
 }
+
+/*Cart*/
+.login .menu-login li .cart{
+    margin-top:5px;
+    color:white;
+    font-size:20px;
+    float:right;
+}
+    .login .menu-login li .cart:hover{
+        color: #d74064;
+        font-size: 25px;
+    }

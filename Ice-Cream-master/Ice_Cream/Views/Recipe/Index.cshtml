@@ -20,6 +20,14 @@
                     <li><a asp-controller="Contact" asp-action="Index"><span>Contact</span></a></li>
                 </ul>
             </div>
+            @*thêm login, sign up*@
+            <div class="login">
+                <ul class="menu-login">
+                    <li><a asp-controller="Login" asp-action="SignUp" class="btn btn-danger btn-md"><span>Sign up</span></a></li>
+                    <li><a asp-controller="Login" asp-action="Index" class="btn btn-danger btn-md"><span>Login</span></a></li>
+                    <li><a asp-page="/Cart" class="cart"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
         </div>
         <div class="top-bar-right">
             <div class="login">

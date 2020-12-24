@@ -3,3 +3,7 @@
     margin: 20px 0;
     color: red;
 }
+
+.col-md-7, .summary-checkout{
+    margin-top: 30px;
+}

@@ -10,8 +10,8 @@
     <div class="row">
         <div class="col-md-7">
             <form method="post" asp-page-handler="checkout">
-                <div class="summary-delivery">
-                    <select name="CatePayment" asp-for="bill.catePayment" class="summary-delivery-selection">
+                <div class="form-group">
+                    <select name="CatePayment" asp-for="bill.catePayment" class="form-control">
                         <option value="null" selected="selected">Choose the form of payment</option>
                         <option value="delivery">Payment on delivery</option>
                         <option value="electionic-wallet">Payment through electronic wallet</option>
@@ -33,7 +33,7 @@
         </div>
 
 
-        <div class="title-checkout">Items in your Bag</div>
+        <div class="title-checkout"><h2>Items in your Bag</h2></div>
 
         <table class="table" style="background-color:white">
             <thead>
