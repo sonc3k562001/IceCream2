@@ -580,3 +580,7 @@ h2, h3{
     font-family: 'Titan One', Arial, Tahoma, sans-serif;
     color: #d41442;
 }
+thead{
+    background-color:rgba(247, 106, 139, 0.87);
+    color:white;
+}
