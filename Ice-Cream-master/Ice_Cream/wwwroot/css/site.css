@@ -275,13 +275,37 @@ section {
 }
 
 /*Cart*/
-.login .menu-login li .cart{
-    margin-top:5px;
-    color:white;
-    font-size:20px;
-    float:right;
+.cart-position {
+    float: right;
+    margin-right: 65px;
+    margin-top: -90px;
 }
-    .login .menu-login li .cart:hover{
+.cart-div {
+    width: 40px;
+    height: 40px;
+    box-shadow: 3px 3px 3px #ffa5ba;
+    border: 1px solid #ffa5ba;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.75);
+    position: fixed;
+    float: right;
+}
+.cart {
+    color: #ed6d8b;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.cart:hover{
         color: #d74064;
-        font-size: 25px;
+        font-size: 30px;
+    }
+
+/*Kênh người bán*/
+.provider {
+    float: right;
+    margin-right: 10px;
+}
+    .provider a {
+        color: rgb(212, 20, 66);
     }
