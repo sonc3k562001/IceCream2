@@ -25,19 +25,22 @@
                 <ul class="menu-login">
                     <li><a asp-controller="Login" asp-action="SignUp" class="btn btn-danger btn-md"><span>Sign up</span></a></li>
                     <li><a asp-controller="Login" asp-action="Index" class="btn btn-danger btn-md"><span>Login</span></a></li>
-                    <li><a asp-page="/Cart" class="cart"><i class="fas fa-shopping-cart"></i></a></li>
                 </ul>
+                <div class="provider">
+                    <a asp-controller="Provider" asp-action="Index">Kênh người bán</a>
+                </div>
             </div>
         </div>
         <div class="top-bar-right">
-            <div class="login">
-                
+            <div class="card" style="float:left">
+                <span></span>
             </div>
         </div>
     </div>
-
+    <div class="cart-position">
+        <a asp-page="/Cart" class="cart-div"><div class="cart text-center"><i class="fas fa-shopping-cart"></i></div></a>
+    </div>
 </div>
-
 
 <div style="background-image: url(https://themes.muffingroup.com/be/icecream2/wp-content/uploads/2019/09/icecream2-subheader3.jpg);
         background-repeat: no-repeat;

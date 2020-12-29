@@ -54,58 +54,54 @@
 <div class="container">
     <div class="card">
         <div class="container-fliud">
+            <h2 class="product-title text-center">@Model.Products.First().Name</h2>
             <div class="wrapper row">
                 <div class="preview col-md-6">
-
                     <div class="preview-pic tab-content">
                         <div class="tab-pane active" id="pic-1"><img src="@Model.Products.First().Image" width="400" height="400" /></div>
-
-                        <h3 class="product-title">@Model.Products.First().Name</h3>
-                        <div class="rating">
-                            <div class="stars">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            </div>
-                            <span class="review-no">41 reviews</span>
-                        </div>
-                        <p class="product-description">@Model.Products.First().Description</p>
-                        <h4 class="price">current price: <span>@Model.Products.First().Price.ToString("c")</span></h4>
-                        <p class="vote"><strong>91%</strong> of buyers enjoyed this product! <strong>(87 votes)</strong></p>
                     </div>
-
                 </div>
                 <div class="details col-md-6">
-                    <h3>RECIPE</h3>
-                    <p>@Model.Products.First().Ingredients;</p>
-                    <p>@Model.Products.First().Recipe</p>
-                    
-
-                    <div class="action">
-
-                        <form method="post" asp-page="/Cart" id="@Model.Products.First().ProductID">
-
-                            <input type="hidden" asp-for="@Model.Products.First().ProductID" />
-                            <input type="hidden" name="returnUrl"
-                                   value="@ViewContext.HttpContext.Request.PathAndQuery()" />
-                            <span class="card-text p-1">
-                                @Model.Products.First().Description
-                                @Model.Products.First().Note;
-                                <br />
-                                <br />
-                                <br />
-                                <hr />
-                                <br />
-                                <button class="add-to-cart btn btn-default" type="submit">Add to cart</button>
-                                <a class="like btn btn-default" type="button" href='/Recipe'>Return Recipe Page</a>
-                            </span>
-                        </form>
-
+                    <div class="rating">
+                        <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <span class="review-no">41 reviews</span>
                     </div>
+                    <p class="vote"><strong>91%</strong> of buyers enjoyed this product! <strong>(87 votes)</strong></p>
+                    <h4 class="price">current price: <span>@Model.Products.First().Price.ToString("c")</span></h4>
+                    <p class="product-description">@Model.Products.First().Description</p>
                 </div>
             </div>
         </div>
+        <div class="col-md-12">
+            <h3>RECIPE</h3>
+            <p>@Model.Products.First().Ingredients</p>
+            <p>@Model.Products.First().Recipe</p>
+            <p><b>Notes:</b>@Model.Products.First().Note</p>
+            <div class="action text-center">
+
+                <form method="post" asp-page="/Cart" id="@Model.Products.First().ProductID">
+
+                    <input type="hidden" asp-for="@Model.Products.First().ProductID" />
+                    <input type="hidden" name="returnUrl"
+                           value="@ViewContext.HttpContext.Request.PathAndQuery()" />
+                    <span class="card-text p-1">
+                        <br />
+                        <br />
+                        <br />
+                        <hr />
+                        <br />
+                        <a class="like btn btn-default" type="button" href='/Recipe'>Return Recipe Page</a>
+                        <button class="add-to-cart btn btn-default" type="submit">Add to cart</button>
+                    </span>
+                </form>
+
+            </div>
+        </div>            
     </div>
 </div>
