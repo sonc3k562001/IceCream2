@@ -22,7 +22,7 @@
                     <button onclick="getPromoCode()" class="promo-code-cta btn btn-success mt-2 mb-2">Apply</button>
                 </div>*@
 
-            <div class="shopping-list col-xs-8 col-md-8">
+            <div class="shopping-list col-xs-9 col-md-9">
                 <table class="table table-bordered table-striped text-center">
                     <thead>
                         <tr class="text-center p-2">
@@ -67,17 +67,18 @@
                 </table>
             </div>
             <br />
-            <div class="col-md-4">
-                <div>
-                    <a asp-page="Checkout" style="width: 90%; height: 50px; padding-top: 10px;" class="btn btn-success">Go to Check out</a>
-                </div><br />
-                <div>
-                    <a asp-page="User" style="width: 90%; height: 50px; padding-top: 10px;" class="btn btn-success">Get info</a>
-                </div><br />
-                <div>
-                    <a asp-controller="Recipe" asp-action="Index" style="width: 90%; height: 50px; padding-top: 10px;" class="btn btn-primary">Continue Shopping</a>
+            <div class="col-md-3 cart-button-position">
+                <div class="col-md-3 cart-button">
+                    <div>
+                        <a asp-page="Checkout" style="width: 90%; height: 50px; padding-top: 10px;" class="btn btn-success">Go to Check out</a>
+                    </div><br />
+                    <div>
+                        <a asp-page="User" style="width: 90%; height: 50px; padding-top: 10px;" class="btn btn-success">Get info</a>
+                    </div><br />
+                    <div>
+                        <a asp-controller="Recipe" asp-action="Index" style="width: 90%; height: 50px; padding-top: 10px;" class="btn btn-primary">Continue Shopping</a>
+                    </div>
                 </div>
-
             </div>
 
             <br />
