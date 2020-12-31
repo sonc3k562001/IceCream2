@@ -886,3 +886,17 @@ D:\Visual Studio 2019\EAP\Team\Ice-Cream-master\Ice_Cream\obj\Debug\netcoreapp3.
 D:\Visual Studio 2019\EAP\Team\Ice-Cream-master\Ice_Cream\obj\Debug\netcoreapp3.1\Ice_Cream.pdb
 D:\Visual Studio 2019\EAP\Team\Ice-Cream-master\Ice_Cream\obj\Debug\netcoreapp3.1\Ice_Cream.genruntimeconfig.cache
 D:\Visual Studio 2019\EAP\Team\Ice-Cream-master\Ice_Cream\obj\Debug\netcoreapp3.1\Ice_Cream.csprojAssemblyReference.cache
+D:\Visual Studio 2019\EAP\Team\Ice-Cream-master\Ice_Cream\obj\Debug\netcoreapp3.1\Razor\Views\Provider\All_order.cshtml.g.cs
+D:\Visual Studio 2019\EAP\Team\Ice-Cream-master\Ice_Cream\obj\Debug\netcoreapp3.1\Razor\Views\Provider\All_product.cshtml.g.cs
+D:\Visual Studio 2019\EAP\Team\Ice-Cream-master\Ice_Cream\obj\Debug\netcoreapp3.1\Razor\Views\Provider\Recipe_free.cshtml.g.cs
+D:\Visual Studio 2019\EAP\Team\Ice-Cream-master\Ice_Cream\obj\Debug\netcoreapp3.1\Razor\Views\Provider\Recipe_fee.cshtml.g.cs
+D:\Visual Studio 2019\EAP\Team\Ice-Cream-master\Ice_Cream\obj\Debug\netcoreapp3.1\Razor\Views\Provider\Recipe_bundle.cshtml.g.cs
+D:\Visual Studio 2019\EAP\Team\Ice-Cream-master\Ice_Cream\obj\Debug\netcoreapp3.1\Razor\Views\Provider\Sales.cshtml.g.cs
+D:\Visual Studio 2019\EAP\Team\Ice-Cream-master\Ice_Cream\obj\Debug\netcoreapp3.1\Razor\Views\Provider\Bank_account.cshtml.g.cs
+D:\Visual Studio 2019\EAP\Team\Ice-Cream-master\Ice_Cream\obj\Debug\netcoreapp3.1\Razor\Views\Provider\Payment.cshtml.g.cs
+D:\Visual Studio 2019\EAP\Team\Ice-Cream-master\Ice_Cream\obj\Debug\netcoreapp3.1\Razor\Views\Provider\Chat_assitant.cshtml.g.cs
+D:\Visual Studio 2019\EAP\Team\Ice-Cream-master\Ice_Cream\obj\Debug\netcoreapp3.1\Razor\Views\Provider\Sale_analysis.cshtml.g.cs
+D:\Visual Studio 2019\EAP\Team\Ice-Cream-master\Ice_Cream\obj\Debug\netcoreapp3.1\Razor\Views\Provider\Effect.cshtml.g.cs
+D:\Visual Studio 2019\EAP\Team\Ice-Cream-master\Ice_Cream\obj\Debug\netcoreapp3.1\Razor\Views\Provider\File_shop.cshtml.g.cs
+D:\Visual Studio 2019\EAP\Team\Ice-Cream-master\Ice_Cream\obj\Debug\netcoreapp3.1\Razor\Views\Provider\Category_shop.cshtml.g.cs
+D:\Visual Studio 2019\EAP\Team\Ice-Cream-master\Ice_Cream\obj\Debug\netcoreapp3.1\Razor\Views\Provider\MyReport.cshtml.g.cs
