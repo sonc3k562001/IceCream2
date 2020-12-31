@@ -37,9 +37,6 @@
                     </div>
                 </div>
             </div>
-            <div class="cart-position">
-                <a asp-page="/Cart" class="cart-div"><div class="cart text-center"><i class="fas fa-shopping-cart"></i></div></a>
-            </div>
         </div>
         <div class="header-slider-text">
             <p>ICE CREAM</p>
@@ -64,7 +61,6 @@
         <div class="header-silder-moderm">
             <img src="https://themes.muffingroup.com/be/icecream2/wp-content/uploads/2019/09/icecream2-slider-pic4.png" width="281" height="222" />
         </div>
-
         <div class="header-slider-circle-mini-one">
             <img src="https://themes.muffingroup.com/be/icecream2/wp-content/uploads/2019/09/icecream2-slider-pic6.png" width="26" height="26" />
         </div>
@@ -78,7 +74,10 @@
 
         <span class="slider-23">23</span><br />
         <span class="slider-trucks">food trucks</span>
-
+        @*Cart*@
+        <div class="cart-position">
+            <a asp-page="/Cart" class="cart-div"><div class="cart text-center"><i class="fas fa-shopping-cart"></i></div></a>
+        </div>
     </header>
 
     <section class="contentTop">

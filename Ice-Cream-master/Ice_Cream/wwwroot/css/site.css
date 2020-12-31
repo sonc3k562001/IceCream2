@@ -277,8 +277,8 @@ section {
 /*Cart*/
 .cart-position {
     float: right;
-    margin-right: 65px;
-    margin-top: -90px;
+    margin-right: 62px;
+    margin-top: 400px;
 }
 .cart-div {
     width: 40px;
